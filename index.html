@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <a href="/"><h1>John Carlo Balisi</h1></a>
+        </div>
+        <div class="hamburger" onclick="toggleNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm John Carlo Balisi, an aspiring web developer with a passion for creating interactive and user-friendly websites. I graduated as a Cum Laude in Tarlac State University and I took BSIT Specialized in Web and Mobile Application. </p>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Taya!</h3>
+                <p>A platformer mobile game that educates about Filipino Traditional Games.</p>
+                <img src="img\Taya\MainMenu.jpg" alt="Taya! project image">
+                <img src="img\Taya\Gameplay.jpg" alt="Taya! project image">
+            </div>
+            <div class="project">
+                <h3>Echo Merch Store Web Design</h3>
+                <p>A merch store web design made in Figma.</p> <sub>Click the picture to view the Figma file.</sub>
+                <a href="https://www.figma.com/design/XGFN8bajwx8mKOQyd5QzP4/Echo-Merch-Store?node-id=0-1&t=fU2zgcsboXXy2bbm-1" 
+                target="_blank"><img src="img\ECHO_MerchShop-WEB.png" alt="Echo project image"></a> <br>
+                <a href="https://www.figma.com/design/XGFN8bajwx8mKOQyd5QzP4/Echo-Merch-Store?node-id=0-1&t=fU2zgcsboXXy2bbm-1" 
+                target="_blank"><img src="img\ECHO_MerchShop-MOBILE.png" alt="Echo project image"></a>
+            </div>
+            <div class="project">
+                <h3>TechMe!</h3>
+                <p>A website that helps people with their tech problems.</sub>
+                <img src="img\TechMe.png" alt="TechMe! project image">
+                <img src="img\TechMeFooter.png" alt="TechMe! project image">
+            </div>
+            <h2>Hobbies etc.</h2>
+            <div class="Hobbies">
+                <h3>Digital Portait</h3>
+                <img src="img\vex1.jpg" alt="TechMe! project image">
+                <img src="img\vex2.jpg" alt="TechMe! project image">
+            </div>
+            <div class="Hobbies">
+                <h3>Gunpla Building</h3>
+                <img src="img\g1.jpg" alt="TechMe! project image">
+                <img src="img\arf.jpg" alt="TechMe! project image">
+                <img src="img\arf2.jpg" alt="TechMe! project image">
+                <video src="img/gv1.mp4" controls></video>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Feel free to contact me through the links below.</p>
+            <a href="https://www.facebook.com/JCarloBalisi" target="_blank" rel="no-referrer">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <span>Facebook</span>
+            </a>
+            <a href="mailto:balisijohncarlo9gmail.com" target="_blank" rel="no-referrer">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <span>Email</span>
+            </a>
+        </section>
+    </div> 
+
+    <footer>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            document.body.classList.toggle('show-nav');
+        }
+    </script>
+</body>
+
+</html>

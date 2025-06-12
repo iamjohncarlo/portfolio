@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+h2{
+      text-align: center;
+
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header a{
+  text-decoration: none;
+  color: #fff;
+}
+
+header h1 {
+    margin-bottom: 0.25rem;
+}
+
+header p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: none;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transform: translateY(-10px);
+    visibility: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 1rem 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+.show-nav nav {
+    display: block;
+    opacity: 1;
+    max-height: 300px;
+    transform: translateY(0);
+    visibility: visible;
+    background-color: #444;
+    padding: 1rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.about,
+.projects,
+.contact {
+    margin-bottom: 2rem;
+}
+
+.project {
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.project img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem auto;
+    border-radius: 4px;
+}
+
+.Hobbies {
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.Hobbies img, video {
+    width: 45%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem auto;
+    border-radius: 4px;
+}
+
+.contact{
+  text-align: center;
+}
+
+.contact a{
+  color: #333;
+  text-decoration: none;
+  font-size: large;
+  text-align:inline;
+  margin-right: 30px;
+}
+
+footer {
+    padding: 1rem;
+    background: #333;
+}
+
+@media (min-width: 768px) {
+    nav {
+        display: block !important;
+        opacity: 1 !important;
+        max-height: none !important;
+        transform: none !important;
+        visibility: visible !important;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin: 0 1rem;
+    }
+
+    header {
+        flex-wrap: nowrap;
+    }
+
+    .header-left {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    header p {
+        margin: 0;
+    }
+}
